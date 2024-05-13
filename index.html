@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lava Jato</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Lava Jato</h1>
+    </header>
+    <main>
+        <form action="historico.html">
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="cliente">Cliente:</label>
+            <input type="text" id="cliente" name="cliente" required>
+
+            <label for="veiculo">Veículo:</label>
+            <input type="text" id="veiculo" name="veiculo" required>
+
+            <label for="valor">Valor:</label>
+            <input type="text" id="valor" name="valor" required>
+
+            <label for="formaPagamento">Forma de Pagamento:</label>
+            <select id="formaPagamento" name="formaPagamento" required>
+                <option value="dinheiro">Dinheiro</option>
+                <option value="cartao">Cartão de Crédito</option>
+                <option value="debito">Cartão de Débito</option>
+                <option value="pix">PIX</option>
+            </select>
+
+            <button type="submit">Salvar</button>
+        </form>
+        <div class="buttons-home">
+            <a href="historico.html" class="btn-home">Histórico</a>
+            <a href="fechamento.html" class="btn-home">Fechamento do Mês</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Lava Jato</p>
+    </footer>
+</body>
+</html>
